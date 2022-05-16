@@ -1,5 +1,14 @@
 getHost:function(e){return e.useWidgetHost?l.widgetHost:l.host},
 
 
+embedStylesForFullHeight:function(e,t,o){var i=t?"calc("+e+" - 32px)":e,n=document.querySelector("#"+o);n.parentElement.style.height=i,n.style.height="100%"},
+
+
+gId:function(){return"tradingview_"+(1048576*(1+Math.random())|0).toString(16).substring(1)},
+
+
+isPersentHeight:function(e){return"%"===e},
+
+
 
 
